@@ -1,0 +1,48 @@
+.nav_item {
+    width: 150px;
+    text-align: center;
+}
+
+.nav_mainitem {
+    width: 250px;
+    text-align: center;
+}
+
+.hide_logo {
+    display: none;
+}
+
+.arrow_icon {
+    z-index: 2;
+    position: fixed;
+    top: 6%;
+    display: none;
+}
+
+.cellphone_header {
+    position: fixed;
+    background-color: #ad9b81;
+    width: 60vw;
+    height: 130vh;
+    z-index: 3;
+    padding: 20px;
+    opacity: 90%;
+}
+
+
+
+@media screen and (max-width: 760px){
+    .hide_logo {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+    }
+    .header_screen :nth-child(1) {
+        display: none;
+    }
+    .arrow_icon {
+        display: block;
+    }
+}
+
+

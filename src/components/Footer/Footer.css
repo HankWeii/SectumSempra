@@ -1,0 +1,25 @@
+/* .foot_outer {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: solid black 2px;
+    background-color: bisque;
+} */
+
+.foot_outer {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    background-color: bisque;
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+}
+
+li, ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 8px;
+}

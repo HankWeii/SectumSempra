@@ -1,0 +1,32 @@
+.contentStyle {
+    margin: 0;
+    height: 500px;
+    color: #fff;
+    line-height: 500px;
+    text-align: center;
+    background-color: #364d79;
+    display: flex;
+    justify-content: space-around;
+}
+
+.outer,.contentStyle {
+    width: 90vw;
+    max-width: 900px;
+}
+
+@media screen and (max-width: 700px){
+    .outer,.contentStyle {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .outer,.contentStyle {
+        width: 120vw;
+    }
+}
+
+.carousel_outer {
+    display: flex;
+    justify-content: space-around;
+}
