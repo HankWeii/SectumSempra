@@ -60,7 +60,7 @@ export default function Page() {
             <Route path='/women/*' element={<WomenNavigate />}/>
             <Route path='/men/*' element={<MenNavigate />} />
             <Route path='/signin' element={<Signin/>} />
-            <Route path='/' element={<FontPage />} />
+            <Route path='*' element={<FontPage />} />
             <Route path='/SectumSempra/' element={<FontPage />} />
             <Route path='/about_brand' element={<AboutBrand />} />
             <Route path='/shopcart' element={<Shopcart userUid={userUid}/>}/>
