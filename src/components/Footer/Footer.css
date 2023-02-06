@@ -23,3 +23,14 @@ li, ul {
 li {
     margin-bottom: 8px;
 }
+
+.ten_vh {
+    height: 10vh;
+    display: none;
+}
+
+@media screen and (max-width: 760px){
+    .ten_vh {
+        display: block;
+    }
+}

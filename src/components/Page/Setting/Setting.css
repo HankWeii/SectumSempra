@@ -1,0 +1,15 @@
+.middle {
+    display: flex;
+    justify-content: space-around;
+}
+
+.setting_content {
+    width: 60vw;
+    max-width: 900px;
+}
+
+@media screen and (max-width: 760px){
+    .setting_content {
+        width: 90vw;
+    }
+}

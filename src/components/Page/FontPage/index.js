@@ -12,7 +12,9 @@ export default function FontPage() {
       const data = collectionSnapshot.docs.map(doc=>{
         const {id} = doc;
         const data = doc.data()
+        console.log(data)
         return {...data,id}
+
       })
       setImageUrl(data,...imageUrls)
     })
@@ -26,7 +28,12 @@ export default function FontPage() {
                 return(
                   <div key={imageUrl.id}>
                     <h3 className='contentStyle'>
-                      <Image src={imageUrl.imageUrl} />
+                      <div className='com_fontpage_image'>
+                        <Image src={imageUrl.imageUrl} />
+                      </div>
+                      <div className='cellphone_fontpage_image'>
+                        <Image src={imageUrl.cellphoneImageUrl} />
+                      </div>
                     </h3>
                   </div>
                 )

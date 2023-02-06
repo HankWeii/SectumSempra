@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import firebase from '../../../utils/firebase'
 import TemplatePage from '../Templates/TemplatePage'
 import 'firebase/compat/storage'
-import { Link, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 export default function Women(props) {
     const [data, setData] = useState([])

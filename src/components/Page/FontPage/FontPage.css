@@ -30,3 +30,16 @@
     display: flex;
     justify-content: space-around;
 }
+
+.cellphone_fontpage_image {
+    display: none;
+}
+
+@media screen and (max-width: 760px){
+    .cellphone_fontpage_image {
+        display: block;
+    }
+    .com_fontpage_image {
+        display: none;
+    }
+}

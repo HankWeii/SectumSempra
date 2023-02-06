@@ -175,7 +175,7 @@ export default function ProductPage({gender}) {
                 return (
                     <>
                         <Image src={url} key={url} style={{paddingTop:'10%'}} onClick={imageOnClick} size='big'   />
-                        <Modal open={modalIsOpen} size='small'>
+                        <Modal open={modalIsOpen} size='small' onClose={()=>setModalIsOpen(false)} onOpen={()=>setModalIsOpen(true)}>
                             <Modal.Actions>
                                 <Button onClick={()=>setModalIsOpen(false)}><Icon name='times'/></Button>
                             </Modal.Actions>
