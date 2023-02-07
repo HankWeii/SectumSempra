@@ -10,7 +10,6 @@ import { Link } from 'react-router-dom'
 export default function Category({gender}) {
     const [data, setData] = useState([])
     const [activeItem, setActiveItem] = useState('')
-    console.log(gender)
     useEffect(()=>{
         firebase
         .firestore()

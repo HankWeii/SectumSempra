@@ -48,7 +48,6 @@ export default function ProductPage({gender}) {
                 return {...doc.data(),colorName}
             })
             setProductStock(data)
-            console.log(data)
         })
     },[])
     const handleClick =(e,{name})=>{
@@ -140,7 +139,7 @@ export default function ProductPage({gender}) {
                         {firstdoc === 'accessory' 
                         ? productStock.map(obj=>{
                             if(obj.colorName === nowColor.id) {
-                                return <Header size='huge'>{obj.count}</Header>
+                                return <Header size='huge' key={obj.colorName}>{obj.count}</Header>
                             }
                         })
                         : size.map(size=>{

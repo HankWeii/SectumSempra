@@ -8,7 +8,6 @@ const DisplayName = ({user})=>{
     const [modalOpen, setModalOpen] = useState(false)
     const [newDisplayName, setNewDisplayName] = useState('')
     const [isLoading, setIsLoading] = useState(false)
-    console.log(user.displayName)
     const handleChangeName =()=>{
         setIsLoading(true)
         firebase.auth().currentUser.updateProfile({
@@ -51,7 +50,6 @@ function Password({user}) {
     const [oldPassword, setOldPassword] = useState('')
     const [newPassword, setNewPassword] = useState('')
     const [isError, setIsError] = useState('')
-    console.log(user.email)
     const changePassword =()=>{
         if(oldPassword === newPassword) {
             setIsError('新密碼不得和舊密碼相同')

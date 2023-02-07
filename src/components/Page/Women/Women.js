@@ -8,7 +8,6 @@ import { useLocation } from 'react-router-dom'
 export default function Women(props) {
     const [data, setData] = useState([])
     const location = useLocation()
-    console.log(props)
     useEffect(()=>{
         firebase
         .firestore()
@@ -23,7 +22,6 @@ export default function Women(props) {
                 return {...doc.data(),id,firstDoc,twiceCollection}
             })
             setData(data)
-            console.log(data)
         })
     },[location.pathname])
     

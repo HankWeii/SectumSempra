@@ -13,7 +13,6 @@ function WomenFontPage() {
         firebase.firestore().collection('allFontpageData').doc('womenFontpage').onSnapshot(docSnapshot=>{
             const data = docSnapshot.data()
             setData(data)
-            console.log(data)
         })
     }, [])
     return (

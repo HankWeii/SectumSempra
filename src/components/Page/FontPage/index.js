@@ -12,7 +12,6 @@ export default function FontPage() {
       const data = collectionSnapshot.docs.map(doc=>{
         const {id} = doc;
         const data = doc.data()
-        console.log(data)
         return {...data,id}
 
       })
